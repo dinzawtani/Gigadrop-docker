@@ -3,9 +3,9 @@ FROM node:alpine
 EXPOSE 3002
 
 RUN apk add --no-cache git -y \
-    && git clone https://github.com/RobinLinus/snapdrop
+    && git clone https://github.com/dinzawtani/Gigadrop
 	
-COPY entrypoint.sh snapdrop
+COPY entrypoint.sh Gigadrop
 
 WORKDIR snapdrop
 
